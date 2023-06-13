@@ -1,0 +1,28 @@
+//https://css-tricks.com/getting-javascript-to-talk-to-css-and-sass/
+
+/* 
+    Make SASS variables available to JS
+        - Export variable structure to matching builder logic
+        - Import variable structure into JS
+        - Tie builders together, this is testable
+        - SCSS file is source of truth for all variables
+        - Import variables as top level as it needs to be 
+
+
+        Ex: 
+        // variables.scss
+            $primary-color: #fe4e5e;
+            $background-color: #fefefe;
+            $padding: 124px;
+
+            :export {
+            primaryColor: $primary-color;
+            backgroundColor: $background-color;
+            padding: $padding;
+            }
+
+            //JS
+            import variables from './variables.scss';
+            console.log(variables.primaryColor); // #fe4e5e
+
+*/
