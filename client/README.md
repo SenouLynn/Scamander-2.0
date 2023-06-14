@@ -2,7 +2,7 @@
 
 Scamander Likely, the intrepid space cowboy has evolved into Scamander Likely the Grundle Pirate.
 
-## Action Plan
+## Brain Dump
 
 - [X] Initial folder structure
 - [ ] Port over component builder logic
@@ -15,7 +15,24 @@ Scamander Likely, the intrepid space cowboy has evolved into Scamander Likely th
 - [ ] Port over router logic
 - [ ] Initial API folder structure
 - [ ] Connection to firebase
-- [ ] 
+
+## Milestones
+
+Gona try and herd cats here, move stuff forward incrementally (through Test Drive Development). Minimizing distracting side quests, these goals should resolve one step towards achieving the next easiest need. 
+
+- [X] Folder structure
+- [X] Routing proof of concept
+- [X] buildPack tested + ready to use
+- [ ] Build InitWrapper
+  - Purpose: This is the main point of entry. Address later
+    - Provide routes
+    - Provide initial projectId
+    - Provide initial themeId
+    - Hydrate
+    - Authorization
+    - Initial load state
+- [ ] Build Theme Provider
+  - Purpose: Main wrapper giving tree access to data it needs to build itself
 
 ## Get er' off the ground
 
