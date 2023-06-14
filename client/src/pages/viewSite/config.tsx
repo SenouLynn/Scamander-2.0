@@ -7,3 +7,4 @@ const viewSite = {
     installed: false,
   },
 };
+export {};

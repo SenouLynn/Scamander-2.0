@@ -1,4 +1,4 @@
-import tests from "./utils/tests";
+import tests from "../utility/tests/tests";
 
 tests.happyPath();
 

@@ -4,11 +4,7 @@ import Outlet from "./routes/components/Outlet";
 //- Page configs are assembled, make available through field
 //- Pass pages + sub routes into browser router, they handle how they do stuff
 function App() {
-  return (
-    <div role="App">
-      <Outlet />
-    </div>
-  );
+  return <div role="App"></div>;
 }
 
 export default App;

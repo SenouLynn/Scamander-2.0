@@ -1,24 +1,35 @@
-import { Outlet, RouterProvider } from "react-router-dom";
-import { router } from "../utils/browserRouter";
-
-import App from "../../App";
-const testRoutes = [
-  {
-    path: "/",
-    // element: <App />,
-    element: <Outlet />, // Will this work?
-    // loader: rootLoader, //Can I use this to load it's own children? Or Should I wrap Router and pass in children routes as props
-    children: [
-      {
-        path: "team",
-        // element: <Team />,
-        // loader: teamLoader,
-      },
-    ],
-  },
-];
-
+import {
+  RouterProvider as RP,
+  createBrowserRouter,
+  createMemoryRouter,
+} from "react-router-dom";
+import { buildRoute } from "../utils/builders";
+import NoRoute from "../../pages/fallback/404";
 export default function Router() {
-  const routes = router([]);
-  return <RouterProvider router={routes} />;
+  //Todo: Provide routes through init functions, presumably from api on initial hydration
+  const routes = [
+    buildRoute({
+      path: "/",
+      element: (
+        <div data-testId="root">
+          <h1>Root</h1>
+        </div>
+      ),
+    }),
+    buildRoute({
+      path: "/*",
+      element: <NoRoute />,
+    }),
+  ];
+  return <RouterProvider type="browser" routes={routes} />;
+}
+
+export function RouterProvider({ routes, type }: RouterProps) {
+  //Toggles between browser and memory router (used for testing scenarios)
+  const router =
+    type === "browser"
+      ? createBrowserRouter(routes)
+      : createMemoryRouter(routes);
+
+  return <RP router={router} />;
 }
