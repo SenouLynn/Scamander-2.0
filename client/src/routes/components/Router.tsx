@@ -4,7 +4,7 @@ import {
   createMemoryRouter,
 } from "react-router-dom";
 import { buildRoute } from "../utils/builders";
-import NoRoute from "../../pages/fallback/404";
+import NoRoute from "../../apps/poopdeck/pages/fallback/404";
 export default function Router() {
   //Todo: Provide routes through init functions, presumably from api on initial hydration
   const routes = [

@@ -2,7 +2,9 @@ export const buildRoute: buildRouteFn = (params) => {
   return {
     path: "/_404",
     element: (
-      <div>Yo, you didn't pass a component to your route. Do better.</div>
+      <div data-testid="bad-route">
+        Yo, you didn't pass a component to your route. Do better.
+      </div>
     ),
     children: [],
     ...params,

@@ -35,6 +35,16 @@ Gona try and herd cats here, move stuff forward incrementally (through Test Driv
     - Initial load state
 - [ ] Build Theme Provider
   - Purpose: Main wrapper giving tree access to data it needs to build itself
+- [ ] Build out Poopdeck wireframe and navigation
+- [ ] Build out state mgmt system
+  - Note: Go with Zustand
+- [ ] Build out rendering engine
+- [ ] Build out className builder engine + SCSS integrations
+- [ ] Build out style-to-component mechanism
+- [ ] Connect db
+  - Note: Look into Prisma and GraphQL. Might be the most readable way of fetching custom data + putting into state
+- [ ] Console/Logging/Observability mechanism
+  - Purpose: Add visibility to errors, toggle for dev/prod
 
 ## Get er' off the ground
 

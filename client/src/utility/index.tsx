@@ -1,3 +1,3 @@
 import tests from "./tests/tests";
-
-export { tests };
+import { testHook } from "./tests/wrappers";
+export { tests, testHook };
