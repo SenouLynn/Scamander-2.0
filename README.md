@@ -22,17 +22,19 @@ Scamander Likely's Cool And Fun Design System is no more. This is the future.
 
 Gona try and herd cats here, move stuff forward incrementally (through Test Drive Development). Minimizing distracting side quests, these goals should resolve one step towards achieving the next easiest need.
 
+## Rebuild + Refactor Phase
+
 - [X] Folder structure
 - [X] Routing proof of concept
 - [X] buildPack tested + ready to use
 - [ ] Build InitWrapper
   - Purpose: This is the main point of entry. Address later
-    - Provide routes
-    - Provide initial projectId
-    - Provide initial themeId
-    - Hydrate
-    - Authorization
-    - Initial load state
+    - [X] Provide routes
+    - [ ] Provide initial projectId
+    - [ ] Provide initial themeId
+    - [ ] Hydrate
+    - [ ] Authorization
+    - [ ] Initial load state
 - [ ] Build Theme Provider
   - Purpose: Main wrapper giving tree access to data it needs to build itself
 - [ ] Build out Poopdeck wireframe and navigation
@@ -45,6 +47,16 @@ Gona try and herd cats here, move stuff forward incrementally (through Test Driv
   - Note: Look into Prisma and GraphQL. Might be the most readable way of fetching custom data + putting into state
 - [ ] Console/Logging/Observability mechanism
   - Purpose: Add visibility to errors, toggle for dev/prod
+
+## Themeing Resources
+Because I am not a designer
+
+- Typefaces:  <https://www.typewolf.com/?ref=uizard.io>
+- Accessible: <https://www.w3.org/TR/WCAG21/?ref=uizard.io>
+- AI Design Help: <https://uizard.io/design-assistant/?ref=uizard.io>
+- Design Philosophy: <https://uizard.io/blog/what-is-a-design-philosophy-and-how-to-create-one/>
+- Color scales: <http://colllor.com/>
+- Pallet generator: <https://coolors.co/>
 
 ## Get er' off the ground
 
