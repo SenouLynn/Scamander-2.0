@@ -1,5 +1,6 @@
 import apps from "../../../apps";
-export const getApps = () => {
+
+export const getApps = (): AppConfig[] => {
   return apps;
 };
 

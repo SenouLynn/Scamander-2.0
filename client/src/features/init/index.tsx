@@ -1,7 +1,7 @@
-import { useInitContext } from "./utils/init";
+import { useAppContext } from "./utils/hooks";
 
 const hooks = {
-  useInitContext,
+  useAppContext,
 };
 
 export { hooks };

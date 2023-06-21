@@ -9,10 +9,7 @@ export const _testNode = {
   attributes,
   Component: TestNode,
 };
+
 export default function TestNode() {
-  return (
-    <div data-testid={attributes.testId} role={"role"}>
-      Components
-    </div>
-  );
+  return <div data-testid={attributes.testId} role={"role"}></div>;
 }

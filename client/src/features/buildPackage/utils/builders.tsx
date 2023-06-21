@@ -1,5 +1,5 @@
 //This is how the entire system communicates with itself. Do not disturb or everything will break.
-export const buildPack: buildPackFn = () => {
+export const buildPack: buildPackFn = (pack) => {
   return {
     label: "", // Display name
     location: "", //Relational id (tree node)
@@ -14,5 +14,6 @@ export const buildPack: buildPackFn = () => {
     buildSelf: () => null, //assemble self
     getData: () => null, //hook
     render: () => null, // render self
+    ...pack,
   };
 };

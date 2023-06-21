@@ -1,8 +1,7 @@
 import { createContext } from "react";
+import { createAppConfig } from "./builders";
 
-const InitContext = createContext<InitContext>({
-  routes: [],
-});
-const InitProvider = InitContext.Provider;
+const AppContext = createContext<AppContext>(createAppConfig({}));
+const AppProvider = AppContext.Provider;
 
-export { InitContext, InitProvider };
+export { AppContext, AppProvider };

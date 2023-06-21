@@ -1,4 +1,1 @@
-type InitContext = {
-  children?: React.ReactNode;
-  routes: Route[];
-};
+type AppContext = AppConfig;
